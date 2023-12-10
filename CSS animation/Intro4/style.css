@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 100px;
+  color: red;
+}
+/* before and after */
+h1::after {
+  /* ⬇This 'content' must be written */
+  content: " kaise hain aap log?";
+  /* This text which is displaying is virtual as we can't select the text on screen */
+  color: rgb(47, 255, 0);
+  font-size: 50px;
+}
+#box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  font-size: larger;
+}
+/* Text will be printed inside the box or text will be printed after the content ends */
+#box::after {
+  content: " kaise ho";
+  font-size: larger;
+}
+
+#box::before{
+    content:"HI ";
+    color: blue;
+
+}

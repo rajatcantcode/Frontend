@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#box {
+  height: 400px;
+  width: 400px;
+  background-color: crimson;
+  position: absolute;
+  /* apply the animation */
+  animation-name: move;
+  /* the time it will take */
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+/* move is just an identifier we can use anything */
+@keyframes move {
+  from {
+    left: 0;
+    background-color: red;
+    rotate: 0;
+  }
+  to {
+    left: 60%;
+    background-color: blue;
+    rotate: 360deg;
+  }
+}

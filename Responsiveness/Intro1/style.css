@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40% 40%;
+}
+#part1 {
+  background-color: beige;
+}
+#part2 {
+  background-color: aqua;
+}
+#part3 {
+  background-color: black;
+}
+#part4 {
+  background-color: brown;
+}
+#part5 {
+  background-color: rgb(245, 220, 236);
+}
+/* pixels */
+#red1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+/* percentage */
+#red2 {
+  height: 100px;
+  width: 10%;
+  /* relative to parent */
+  background-color: red;
+}
+/* viewport */
+#red3 {
+  height: 100px;
+  width: 10vw;
+  /* 100vw = all width */
+  /* viewport width vh - viewport height */
+  /* relative to the screen */
+  background-color: red;
+}
+/* view max/min */
+#red4 {
+  height: 100px;
+  width: 10vmax;
+
+  /* This takes maximum between height and width */
+  /* in phone height > wherease in laptops width > */
+  /* LAPTOP - reference - width is maximum it will take the size 10 view port with width  */
+  /* but if we start shrinking the size  */
+  /* There will be a point when our height > width (in laptop) */
+  /* Then it will start taking properties with reference to height - 10 viewport with height */
+  /* In short: joh zaada uske reference pe (height ya width) */
+
+  background-color: red;
+}
+/* em and rem */
+#red5 {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  font-size: 20px;
+}
+/* according to the parent */
+h1 {
+  font-size: 1em;
+  /* 1*20px */
+}
+h2 {
+  font-size: 2em;
+  /* 2*20 = 40px */
+}
+h3 {
+  font-size: 3em;
+  /* 3*20= 60px */
+}
+/* rem - according to root i.e.. html ke parent*/
+/* 1rem = 16px */
+h4 {
+  font-size: 6rem;
+}
+/* It is more recomende to use flex to use more often and use absolute less */

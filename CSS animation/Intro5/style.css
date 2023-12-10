@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px 200px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-weight: 1000;
+  font-size: 50px;
+  border: 2px solid cyan;
+  position: relative;
+}
+button::after{
+    content:"";
+    height: 100%;
+    background-color: cyan;
+    /* we want to make it visible that's why use absolute */
+    position:absolute;
+    /* to align it with button ⬇️ */
+    left:0;
+    top:0;
+    /* actual work */
+    width: 0%;
+    transition: all linear 0.5s;
+    /* with the help of this our content written on button won't get hidden */
+    z-index: -1;
+}
+button:hover::after{
+    width:100%;
+}
+button:hover{
+    color: black;
+}

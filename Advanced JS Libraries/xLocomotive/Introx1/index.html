@@ -1,0 +1,41 @@
+<!-- 1.Ensure a parent div with the id #main -->
+<!-- 2.Search for 'locomotive cdn' on Google, select locomotive-scroll.js from https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js -->
+<!-- 3.Create a new Script tag with src attribute pointing to the above link -->
+<!-- 4.Add locomotive-scroll.css via CDN; search for 'locomotive cdn', select locomotive-scroll.css -->
+<!-- 5.Create a new css tag just above the style.css tag and paste the CDN-->
+<!-- 6.Copy and paste the JS code from https://github.com/locomotivemtl/locomotive-scroll -->
+<!-- 7.Refer to README.md file, find 'Smooth', and copy the corresponding JS code -->
+<!-- 8. Copy this 👇 -->
+<!-- const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+    });
+ -->
+<!-- 9.Replace document.querySelector('[data-scroll-container]') with document.querySelector('#main') or the parent div -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Locomotive-CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- make sure not to give #main height - not a proper structure -->
+    <div id="main">
+      <div id="page1"></div>
+      <div id="page2"></div>
+      <div id="page3"></div>
+    </div>
+    <!-- Locomotive-js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

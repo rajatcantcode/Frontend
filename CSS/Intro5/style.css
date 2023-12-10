@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* Line-Height */
+h1 {
+  /* vertical distance between the baseline of one line of text and the baseline of the next. */
+  /* line-height: 40px; */
+  /* we can also use  */
+  line-height: 1;
+  /* It removes all the extra spacing and if we do .5 they will be crossing each other*/
+
+  /* text-align is being used by default */
+  text-align: center;
+}
+
+#box {
+  height: 300px;
+  width: 300px;
+  background-color: lightcoral;
+  padding: 30px 30px 30px 30px;
+  /* top right down left clock wise  */
+  padding: 30px 20px;
+  /*30px = top and bottom 20px = right and left*/
+  /* Note :same happen with margin */
+}
+
+/* Padding --> within the box */
+#box2 {
+  height: 300px;
+  width: 300px;
+  background-color: lightcyan;
+  margin: 30px;
+}
+/* Margin --> outside the box */
+
+/* Border */
+#box3 {
+  height: 30%;
+  width: 30%;
+  background-color: beige;
+  /*  
+  border:5px;
+  border-color: black;
+  border-style: solid;
+  Writing all this in one line
+  */
+  border: 5px dotted black;
+  border-radius: 20px;
+}

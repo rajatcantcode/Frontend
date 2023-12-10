@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 100px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 60% 10% 10% 10% 10%;
+  /* This is  */
+  align-items: center;
+  justify-items: center;
+  border: 2px solid black;
+  padding: 0 20px;
+}
+#nav h1 {
+  /* justify-items: start; */
+  /* But this won't work because it does have parent and it's a child */
+  /* For child this works */
+  justify-self: start;
+}

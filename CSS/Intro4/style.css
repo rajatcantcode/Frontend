@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+    font-family: "face";
+    src: url(./KarlaFont2/Karla-Italic-VariableFont_wght.ttf);
+}
+#demo {
+  width: 1200px;
+  max-width: 500px;
+  /* Maximum the width can go to a distinct value given in max-width  */
+  /* There is also min-width the least we can have */
+  height: 200px;
+  background-color: red;
+}
+/* What we have done  */
+h1{
+    color: aqua;
+    font-family: face;
+    font-weight: 900;
+    text-transform: capitalize;
+    /* Every word 1st letter gets capitalize , uppercase, lowercase....none is also there if something is set up will remove it */
+    text-decoration: line-through;
+    font-size: 2vw;
+    /* Recomended to write in view by */
+}

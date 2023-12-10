@@ -1,0 +1,84 @@
+@font-face {
+  font-family: GilroyDark;
+  src: url(Gilroy-Font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: GilroyLight;
+  src: url(Gilroy-Font/Gilroy-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#nav {
+  height: 10vh;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h3 {
+  font-family: GilroyLight;
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+#nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#main h1 {
+  position: relative;
+  z-index: 9;
+  /* to show text above the pics ☝🏿 */
+  color: white;
+  font-size: 150px;
+  font-family: GilroyDark;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 120px;
+  width: 80%;
+  margin-left: 15%;
+}
+/* Why nth-child 2 , with writing it's considering #nav to be child 1  */
+/* This is small bug in css */
+#main h1:nth-child(2) {
+  margin-top: 200px;
+}
+#main h1:nth-child(3) {
+  text-align: center;
+}
+#main h1:nth-child(4) {
+  text-align: center;
+}
+
+img {
+  width:250px;
+  height: 400px;
+  position: absolute;
+  object-fit: cover;
+  top: 12%;
+  left: 40%;
+}
+
+#img1{
+  rotate: 0deg;
+}
+#img2{
+  rotate:20deg;
+}
+#img3{
+  rotate:10deg;
+}

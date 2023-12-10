@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#box {
+  width: 300px;
+  height: 300px;
+  background: url(https://images.unsplash.com/photo-1698923211993-2eede38c391a?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  /* This helps in to cover the box */
+  background-position: center;
+  /* if we want to see center part of the image , bottom to see the bottom of the image*/
+}
+#box2{
+    width: 300px;
+    height: 300px;
+    background: url(https://static.vecteezy.com/system/resources/previews/008/167/400/non_2x/shocking-cartoon-pop-art-background-free-vector.jpg);
+    background-size: contain;
+    /* Image ko puri laega ka div ke andar and it can also repeat the image to counter this problem */
+    background-repeat: no-repeat;
+    /* But this may not look good */
+    /* It is recomended to use cover more often */
+}
+
+body{
+    background: linear-gradient(to right, rgb(169, 61, 61),green,yellow,blue,green);
+    /* We can write as many colors */
+    /* We can also write to right bottom and else... how we want it to look like */
+}

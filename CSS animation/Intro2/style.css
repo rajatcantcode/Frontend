@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+img {
+  height: 500px;
+  position: relative;
+  animation-name: chutki-anime;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+/* We want the animation */
+/* O-------| */
+/*         | */
+/*         | */
+/*         | */
+/*         X */
+@keyframes chutki-anime {
+  0%{
+    left: 0;
+    top: 0;
+    rotate: 0deg;
+  }
+  50%{
+    left: 50%;
+    top: 0;
+    rotate:0deg;
+  }
+  100%{
+    left: 50%;
+    top: 50%;
+    rotate: 360deg;
+  }
+}

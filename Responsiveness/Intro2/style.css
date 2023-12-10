@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#parent {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  /* flex-direction: column; */
+  /* swaped main axis and cross axis */
+  align-items: center;
+  justify-content: space-evenly;
+  /* As the screen shrinks it starts wrapping all 3 elements into the screen but make sure ->space-evenly ->center */
+  flex-wrap: wrap;
+  /* this won't allow the elements to wrap instead will move to the second line */
+}
+.child {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border: 2px solid white;
+}

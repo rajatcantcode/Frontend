@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+}
+button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  height: 200px;
+  width: 500px;
+  border: 3px solid #20c20e;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+button::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  background-color: #20c20e;
+  transition: all linear 0.5s;
+  z-index: -1;
+}
+button:hover::after {
+  transform: translate(-50%, -50%) scale(6);
+}
+button:hover {
+  color: black;
+}

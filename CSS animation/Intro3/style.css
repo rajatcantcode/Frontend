@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#box1 {
+  height: 300px;
+  width: 300px;
+  background-color: sienna;
+  position: relative;
+  animation-name: box-anime;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* This will prevent to reset back the element to its position */
+  animation-fill-mode: forwards;
+  /* Count the number of times it's going to run */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* start fast ending slow */
+  animation-timing-function: ease-out;
+}
+#box2 {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  position: relative;
+  animation-name: box-anime;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* Count the number of times it's going to run */
+  animation-iteration-count: 2;
+  animation-direction: reverse;
+}
+@keyframes box-anime {
+  from {
+    left: 0;
+  }
+  to {
+    left: 70%;
+  }
+}

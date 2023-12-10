@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(201, 67, 67);
+  position: relative;
+  /* this will look so small almost negligible */
+  padding-top: 1px;
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  /* This will lead to take parent to also leave the margin on the top which will lead to left in white colour */
+  margin-top: 50px;
+  background-color: beige;
+}

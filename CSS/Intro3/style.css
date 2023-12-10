@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.demo {
+  color: red;
+  background-color: whitesmoke;
+}
+
+/* UNITS -> px , % , vw , vh , em , rem */
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+| Unit | Description                          | Relative to                  | Use Case                                     | Pros                                     | Cons                                                 |
+|------|--------------------------------------|------------------------------|----------------------------------------------|------------------------------------------|------------------------------------------------------|
+| px   | Pixels                               | Absolute                     | Precise control, fixed-size elements         | Consistent, pixel-level control          | Not inherently responsive, may not scale well        |
+| %    | Percentage                           | Parent container             | Responsive layouts, proportional sizing      | Relative to parent size                  | May lead to unpredictable results in nested elements |
+| vw   | Viewport Width                       | Viewport width               | Sizing based on the width of the viewport    | Good for responsive designs              | Limited browser support in older browsers            |
+| vh   | Viewport Height                      | Viewport height              | Sizing based on the height of the viewport   | Useful for full-height sections          | Limited browser support in older browsers            |
+| em   | Relative to the font-size of element | Parent element               | Scalable layouts, relative to text size      | Adapts well to changes in font size      | Can be affected by nested font-size changes          |
+| rem  | Relative to the root font-size       | Root element (html)          | Consistent scaling, relative to root size    | Easier to maintain a consistent scale    | Limited browser support in older browsers            |
+|______|______________________________________|______________________________|______________________________________________|__________________________________________|______________________________________________________|
+*/
+
+#pixel {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+#percentage {
+  height: 50%;
+  width: 50%;
+  background-color: yellow;
+}
+/* vw = total screen ki width ka 10 %  lelenga same with vw , pure screen ki height ka 10 % lelenga*/
+#vhvw {
+  width: 10vw;
+  height: 10vh;
+  background-color: green;
+}
+/* Difference between view by and percentage ? ..  after all view by is eventually taking percentage */
+/* % --> parent se value leta hain */
+/* view by --> screen se value leta hain */
+
+#demo1 {
+  height: 200px;
+  width: 500px;
+  background-color: aqua;
+}
+#child1 {
+  height: 100%;
+  width: 90%;
+  background-color: black;
+}
+
+#demo2 {
+  height: 200px;
+  width: 500px;
+  background-color: beige;
+}
+/* beige is hidden as child2 is referencing the whole screen not parents class  */
+#child2 {
+  height: 50vh;
+  width: 50vw;
+  background-color: blueviolet;
+}
+
+/* em -- related to font-size of div , rem - related to root-font-size */
+/* This is also fixed like in pixel To Change its value we need to change font-size */
+#em {
+  font-size: 12px;
+  /* 2 * 12  = 24px = width = height*/
+  width: 2em;
+  height: 2em;
+  background-color: blanchedalmond;
+}
+
+html {
+  /* html font-size = root-font-size */
+  font-size: 12px;
+}
+#rem {
+    /* rem don't give a shit about it's own font-size only ROOT-font-size */
+  font-size: 50px;
+  width: 2rem;
+  height: 2rem;
+  background-color: violet;
+}

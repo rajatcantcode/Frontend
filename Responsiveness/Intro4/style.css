@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+}
+/* This code will run when elements are > 600px */
+/* Most of our mobile phones usually comes in the segment below 600px */
+@media (max-width: 600px) {
+    #box{
+        background-color: red;
+        border-radius: 50%;
+    }
+}

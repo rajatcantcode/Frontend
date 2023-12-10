@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pseudo-elements */
+/* ->before ->after ->first-line ->first-letter ->selection */
+
+/* ::before & ::after */
+/* har ek element ke paas ek possibility hoti hain vo element chaahe toh active kar skta hain -- do after or before naam ki*/
+/* By default yeh inactive hoti hain */
+
+/* Note : I don't find this much useful */
+
+p {
+  width: fit-content;
+
+  position: relative;
+}
+p::before {
+  position: absolute;
+  /* MUST WRITE content to activate  */
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  background-color: red;
+}
+p::after {
+  position: absolute;
+  content: ">";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(47, 0, 255);
+}
+
+/* firstLine & firstletter */
+/* It is dynamic */
+h1::first-line {
+  color: brown;
+}
+h1::first-letter {
+  color: royalblue;
+  font-size: 120px;
+}
+
+h1::selection {
+  color: green;
+}
+
+/* Psuedo-classes */
+/* ->hover ->active ->focus ->nth-child(n) */
+
+/* hover */
+h2:hover {
+  color: rgb(245, 220, 237);
+}
+/* active */
+/* This will run when we click on something */
+button {
+  height: 100px;
+  width: 100px;
+  background-color: beige;
+}
+button:active {
+  background-color: red;
+}
+/* focus */
+input:focus{
+    background-color: blue;
+}
+/* nth child */
+h3:nth-child(3n){
+    background-color: violet;
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+#tabs {
+  display: flex;
+  gap: 20px;
+}
+.tab {
+  border: 2px solid black;
+  background-color: #dadada;
+}
+h3 {
+  margin-top: 20px;
+  display: none;
+}

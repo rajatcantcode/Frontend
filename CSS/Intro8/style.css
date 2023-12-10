@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* FlexBox */
+/* Rule: Whenever we want the elements to be side by side then only to use FlexBox */
+/* But Flexbox elements pe nahi lagta voh lagta hain unke parent par */
+/* Note : Whenever we perform FlexBox on a element this activates two axis on it */
+/* x and y axis --> x = main ; y = cross */
+/* Elements ki direction batayegi direction of main axis */
+/* Main axis mein work karne ke liye use hota hain--> justify-content */
+/* Cross axis mein work hone ke liye use hota hain--> align-items */
+#box {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  /* Main Axis */
+  justify-content: center;
+  /* space-between fills up the whole space of parent and have space in between  */
+  /* space-around ,space-evenly, end.... */
+  /* Cross axis */
+  align-items: center;
+}
+#one {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+}
+#two {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+}
+#three {
+  height: 50px;
+  width: 50px;
+  background-color: beige;
+}
+/* By Default: Main Axis is left to right  */

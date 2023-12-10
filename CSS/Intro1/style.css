@@ -1,0 +1,16 @@
+/* BoilerPlate Code for CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -> '*' selects all elements on the page
+   -> margin: 0; padding: 0; resets margin and padding for all elements.
+   -> box-sizing: border-box; includes padding and border in the element's total width and height */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* width: 100%; height: 100%; sets the width and height of the HTML and body elements to 100% of the viewport. */

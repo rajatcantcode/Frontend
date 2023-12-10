@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+p {
+  /* display: inline; */
+  /* Note : cannot change width and height of the element */
+  /* only in inline-block */
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+}
+a {
+  display: block;
+}
+
+/* Position Absolute */
+/* We see screen in 2D x and y - look it as car , by Absolute it gets fly in air and let after it figure complete the empty space left by him  */
+/* 
+--------------|
+              |
+brown         |
+______________|
+            |
+red         |
+            |
+____________|____
+                |
+black           |
+________________|
+*/
+#car1 {
+  width: 100px;
+  height: 140px;
+  background-color: brown;
+}
+#car2 {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  background-color: red;
+}
+#car3 {
+  position: absolute;
+  width: 105px;
+  height: 90px;
+  background-color: black;
+}
+/* 
+Here car2 and car3 are on absolute 
+car2 up car 3 takes the space
+car 3 up car 2 at same position as no empty space left
+--------------|
+              |
+brown         |
+______________|__
+                |
+black           |
+________________|
+red        |
+-----------|
+ */
+
+/* Position Relative */
+/* Ismein bhi like Absolute upar uth ta hain 
+ but in Absolute we can do top-> any pxels element can literally can go anywhere - PROBLEM */
+#box {
+  position: relative;
+  /* Now whatever inside the box will be relative to the box */
+  margin-top: 200px;
+  width: 300px;
+  height: 300px;
+  background-color: beige;
+}
+#cube {
+  /* it is 40% but relative to the box*/
+  position: absolute;
+  left: 40%;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+}
+
+/* There is also one position fixed for that we need to increase the body size */
+body {
+  height: 5000px;
+  /* Scroller will be added */
+}
+#demo {
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}

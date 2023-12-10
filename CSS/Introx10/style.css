@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  /* Here we added just*/
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  /* place this all elements in center with respect to their box(row*col) */
+  align-items: center;
+  justify-items: center;
+  /* Note : align - items, content -> two different things  */
+  justify-content: space-between;
+  align-content: space-between;
+}
+.elem {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border: 2px solid black;
+}
