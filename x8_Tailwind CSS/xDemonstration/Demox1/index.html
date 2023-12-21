@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remix cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- TailWind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="main"
+      class="relative w-screen h-screen bg-[#F5F5DC] px-5 py-5 font-[]"
+    >
+      <div id="nav" class="mx-auto flex items-center justify-between">
+        <div id="nav-left">
+          <h6 class="font-semibold text-2xl lg:4xl">rajatop.design</h6>
+        </div>
+        <div
+          id="nav-right"
+          class="hidden lg:flex items-center justify-evenly text-xl gap-10"
+        >
+          <a class="text-lg opacity-50" href="#">About me</a>
+          <a class="text-lg opacity-50" href="#">Services</a>
+          <a class="text-lg opacity-50" href="#">Contact</a>
+          <a class="text-lg opacity-50" href="#">Projects</a>
+        </div>
+        <i class="lg:hidden ri-menu-3-line text-lg"></i>
+      </div>
+      <div
+        id="content"
+        class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full flex flex-col items-center mt-20"
+      >
+        <div
+          id="profile"
+          class="w-32 h-32 rounded-full bg-blue-200 border-4 border-transparent"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://as1.ftcdn.net/v2/jpg/06/07/73/22/1000_F_607732233_nSiBc3lhAb7mlZRVTJ6O2CUnF87O0xeJ.jpg"
+            alt=""
+          />
+        </div>
+        <h2 class="font-semibold text-xl mt-5 text-4xl">Hi! I'm Rajat 👋🏽</h2>
+        <h1 class="leading-4 text-3xl mt-10">Building Digital</h1>
+        <h1 class="leading-4 text-3xl mt-4">Products, and</h1>
+        <h1 class="leading-4 text-3xl mt-4">experiences</h1>
+        <div
+          id="contact"
+          class="bg-black w-30 h-30 rounded-3xl mt-10 text-white px-5 py-4"
+        >
+          Contact me
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

@@ -33,3 +33,10 @@ Advanced
 ->Error Handling (try..catch blocks)
 ->Custom Events
 
+JS required for REACT
+->immutable vs mutable
+->array , objects (alrady done above ☝🏿),spread operator
+->destructuring
+->import and export
+->arrow fxn (implicit return)
+->map , filter (used a lot in React)
