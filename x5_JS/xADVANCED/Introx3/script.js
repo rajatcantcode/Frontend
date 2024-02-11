@@ -1,7 +1,7 @@
 //prototypal inheritance
-//We create object and hum kisi ek parent constructor function ke prototype mein kuch add kar dete hain
-//& jab bhi add hota hain to wo parents se milne waale sabhi children instances ko woh properties jo parent
-//ko prototype mein di gyi thi wo milti hain
+// We create object and hum kisi ek parent constructor function ke prototype mein kuch add kar dete hain
+// & jab bhi add hota hain to wo parents se milne waale sabhi children instances ko woh properties jo parent
+// ko prototype mein di gyi thi wo milti hain
 
 function makeHuman(name, age) {
   this.name = name;

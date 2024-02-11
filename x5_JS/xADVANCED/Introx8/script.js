@@ -8,6 +8,7 @@
 //dispatch that event from that DOM element (in which you attack the event)
 
 const evt = new Event("chacha");
+//Note : We don't have any chacha name default listener
 document.querySelector("button").addEventListener("chacha", function () {
   alert("chacha event hua");
 });

@@ -9,19 +9,19 @@ function abcd() {
 }
 abcd(); //will return window
 
-abcd.call(obj);
-abcd.call(12);//we can place any value to 'this'
+abcd.call(obj); //{ name: "Rajat" }
+abcd.call(12); //we can place any value to 'this' // Number {12}
 
 //2.Apply
 //same as call but we just can add more parameters to it
-function xyz(a,b,c){
-    console.log(this,a,b,c);
+function xyz(a, b, c) {
+  console.log(this, a, b, c);
 }
 //abc.apply(this,[array])
-xyz.apply(obj,[1,2,3])
+xyz.apply(obj, [1, 2, 3]);//{name: 'Rajat'} 1 2 3
 
 //3.Bind
-//same as call -> we don't get answer immediately here 
+//same as call -> we don't get answer immediately here
 //it returns a new fxn which we can use further
 abcd.bind(obj);
 const lateruse = abcd.bind(obj);

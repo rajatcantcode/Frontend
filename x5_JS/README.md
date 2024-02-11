@@ -6,16 +6,16 @@ Introduction
 
 ->inbuilt features  
 ->variables constants  
-->compilers and interpreters  
+->compilers & interpreters  
 ->window  
-->Data types and typecasting
+->Data types & typecasting
 ->conditionals  
 ->loops
 
 **Intermediate**
 
 ->functions  
-->return      
+->return  
 ->undefined, not defined,null  
 ->array  
 ->loop with array  
@@ -34,22 +34,20 @@ Introduction
 ->Custom Events
 
 **Asynchronous Javascript**  
-->Fetch API  
-->Axios  
-->Callbacks  
+->setTimeout & setInterval
+->Fetch API & Axios  
 ->Promises  
-->Async/Await  
-->Event loop  
+->Callbacks  
+->Async/Await 
 ->Callbacks vs promises vs Async/Await  
 ->Generators  
-->Error Handing in Asynchronous Code  
-->Web Works  
-->AJAX
+->Webworks
 
 **JS required for REACT**  
 ->immutable vs mutable  
 ->array , objects (alrady done above ☝🏿),spread operator  
 ->destructuring  
-->import and export  
+->import &
+export  
 ->arrow fxn (implicit return)  
 ->map , filter (used a lot in React)

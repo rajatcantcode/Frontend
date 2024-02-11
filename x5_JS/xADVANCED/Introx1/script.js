@@ -2,6 +2,7 @@
 //'this' value gets changed according to the conditions , if we learn about all conditions then we be able to understand 'this' keyword
 
 //Condtions:
+
 //1★global scope-> window
 console.log(this); //will return just window
 
@@ -10,7 +11,7 @@ function abcd() {
   console.log(this);
 }
 abcd();
-1;
+
 //3★method->object
 //Aisa fxn jo obj ke ander ho = method
 var obj = {
@@ -47,7 +48,7 @@ var obj3 = {
     const child = () => {
       console.log(this);
     };
-    child(); //{sayName: ƒ}👇refer
+    child(); //{sayName: ƒ} 👇refer
   },
 };
 obj3.sayName();

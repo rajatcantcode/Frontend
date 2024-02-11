@@ -22,6 +22,7 @@ parent.addEventListener("click", function (details) {
 //               Efficient for handling events on multiple nested elements with a common ancestor.
 
 /*2nd part-------------------- more details */
+
 // We only one listener and using on different elements
 parent.addEventListener("click", function (details) {
   if (details.target.id === "play") {
